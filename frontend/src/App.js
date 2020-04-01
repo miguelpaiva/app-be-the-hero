@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+
+import './global.css';
+
+import Routes from './routes';
+
+// JSX (JavaScript XML) - HTML integrado dentro de um arquivo .js
+
+// Componentes no React sao funcoes que retornam HTML
+
+// funcao do componente recebe parametro props (se estiver na propriedade tag html) { props.title }
+//                                 ou children (se estiver dentro das tags html) { children }
+
+// import {useState}, useState() retorna um array [valor, funcao de atualizacao()]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello OmniStack 11.0 !!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes/>
+  )
 }
 
 export default App;
